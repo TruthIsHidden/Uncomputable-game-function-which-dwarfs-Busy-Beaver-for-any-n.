@@ -25,9 +25,30 @@ Therfore C(n) > Pickle(n).
 Let G(k,m) be the  M'th growth of Pickle(k). Therefore G(2,0) is -> Growth rate of Pickle(2) or simply G(2).
 Therfore G(k,0) = G(k) [Both are represented using G(), but the number of parameters distinguishes]
 G(n,n) =  ΔG(n), also known as the diagonal Growth function.
+Assumption, G(k+1,m) > G(k,m+1):
+G(k, m+1) = G(k+1,m)/G(k,m) - (i)
+from (i), G(k+1,m) = G(k,m+1) * G(k,m) - (ii)
+substituing (i) and (ii)
 
-Unproven Theorem: Does G(k+1, m) > G(k, m+1) hold true for all value pairs?
+G(k,m+1) * G(k,m) >= G(k, m+1)
+G(k,m) >= 1
+Assume, G(k,m) <= 1.
+If m = 0
+G(k) <= 1
+Pickle(k+1)/Pickle(k) <= 1
+Pickle(k+1) <= Pickle(k)
+Contradiction! The growth is NOT sub linear.
+If m = 1
+G(k+1, 0) / G(k, 0) <= 1
+G(k+1, 0) <= G(k, 0)
+Pickle(K+2)/Pickle(k+1) <= Pickle(k+1)/Pickle(k)
+Pickle(k+2) * Pickle(k) <= Pickle(k+1)^2
+Since Pickle(k+2) > Pickle(k+1), such that Pickle(k+2) > Pickle(k+1)^2, otherwise the growth would be exponentional, which it isnt.
+Contradiction! Pickle(k+2) * Pickle(k) > Pickle(k+1)^2
+if m > 1
+We prove the same thing as we get the Growth will be decreasing, which it isnt. therefore its a contradiction.
 
+Therefore G(k+1,m) > G(k, m+1)
 
 Growth Tier:
 Pickle(n) < C(n) < G(n) < G`(n)...
