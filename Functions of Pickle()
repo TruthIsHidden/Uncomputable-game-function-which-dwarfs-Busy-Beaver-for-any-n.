@@ -1,0 +1,18 @@
+Let G(n) defined as the growth of the upper n and lower n, such that:
+G(n) = Pickle(n+1)/Pickle(n).
+
+Assumption, G(n) > Pickle(n):
+If G(n) <= Pickle(n), then Pickle(n+1) ~ Pickle(n)^2 or Pickle(n) * k, such that k < Pickle(n).
+Contradiction! The above statement cannot be true as the growth of Pickle(n+1) with respect to Pickle(n) is NOT linear or exponential.
+Therefore G(n) >> Pickle(n).
+
+Let R(n) be defined as G(n)^-1.
+As n approaches infinity, the limit is 0.
+Therefore the growth is incomprehensible.
+
+Let G` be the growth rate of G(n) and G`` be the growth of G`(n).
+Thus, we can produce more unbelievably growth (for now only this much later ill do further stuff).
+
+Let C(n) be the ratio of the growth rate of G(n) to Pickle(n).
+
+(Dint use claude for this, thats why the dip in formatting is prolly badd)
