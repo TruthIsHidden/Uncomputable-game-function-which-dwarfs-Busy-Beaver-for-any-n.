@@ -22,6 +22,13 @@ Pickle(n)^3 > Pickle(n+1)
 Contradiction! The above statement is untrue as the growth is NON exponentional.
 Therfore C(n) > Pickle(n).
 
+Let G(k,m) be the  M'th growth of Pickle(k). Therefore G(2,0) is -> Growth rate of Pickle(2) or simply G(2).
+Therfore G(k,0) = G(k) [Both are represented using G(), but the number of parameters distinguishes]
+G(n,n) =  ΔG(n), also known as the diagonal Growth function.
+
+Unproven Theorem: Does G(k+1, m) > G(k, m+1) hold true for all value pairs?
+
+
 Growth Tier:
 Pickle(n) < C(n) < G(n) < G`(n)...
 
