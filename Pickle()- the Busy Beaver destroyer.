@@ -208,8 +208,8 @@ True M(n) represents:
 - Eventually forced to terminate
 
 ### The Recursive Structure:
-
-M*(1) = Game length with luck budget 2^1,000,000,000
+M*(0) = Game length with luck budget 2^1,000,000,00000
+M*(1) = Game length with luck budget M*(0)
 M*(2) = Game length with luck budget M*(1)
 M*(3) = Game length with luck budget M*(2)
 M*(4) = Game length with luck budget M*(3)
@@ -344,7 +344,7 @@ This is the essence of uncomputability: something can be perfectly defined, prov
 ### M*(1) - The Foundation
 
 *Parameters:*
-- Luck Budget: 2^1,000,000,000
+- Luck Budget: M(*0)
 - CG Probability: 1%
 - Gauntlet Spacing: 3 moves
 - Regular Growth: g^2 per coconut
